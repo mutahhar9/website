@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digitally Advertising | Rana Mutahhar</title>
+    <title>Grow independently with us | Digitally Advertising</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' width='100' height='100'/><text x='50' y='60' font-size='50' font-weight='800' fill='%23fff' text-anchor='middle' font-family='Arial'>da</text></svg>" />
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
@@ -240,10 +242,97 @@
             padding-top: 12px;
         }
 
+        /* ----- PORTFOLIO / CASE STUDIES ----- */
+        .portfolio {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 48px;
+        }
+
+        .portfolio-item {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f0f7ff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            padding: 28px;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0b1a2f;
+        }
+
+        .portfolio-content .platform {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .portfolio-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .portfolio-stat {
+            background: #f0f7ff;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .portfolio-stat .value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #2563eb;
+            display: block;
+        }
+
+        .portfolio-stat .label {
+            font-size: 0.85rem;
+            color: #334155;
+            margin-top: 4px;
+        }
+
         /* ----- ABOUT / STORY ----- */
         .about {
             padding: 80px 0;
-            background: #f8fafc;
+            background: #ffffff;
         }
 
         .about h2 {
@@ -262,7 +351,7 @@
         }
 
         .about .highlight-box {
-            background: #ffffff;
+            background: #f8fafc;
             padding: 24px;
             border-radius: 16px;
             border-left: 6px solid #2563eb;
@@ -393,6 +482,9 @@
             .results-grid {
                 grid-template-columns: 1fr 1fr;
             }
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
             .hero h1 {
                 font-size: 2.6rem;
             }
@@ -406,6 +498,9 @@
                 max-width: 100%;
             }
             .results-grid {
+                grid-template-columns: 1fr;
+            }
+            .portfolio-grid {
                 grid-template-columns: 1fr;
             }
             .hero-stats {
@@ -441,6 +536,7 @@
             <div class="logo">Digitally<span>Advertising</span></div>
             <nav class="nav-links">
                 <a href="#results">Results</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#about">About</a>
                 <a href="#contact" class="nav-cta">Let's Talk</a>
             </nav>
@@ -507,6 +603,136 @@
 
             <div style="text-align:center; margin-top:40px;">
                 <a href="#contact" class="btn btn-primary">Let's Get You These Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO / CASE STUDIES ===== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our <span style="color:#2563eb;">Campaign Wins</span></h2>
+            <p class="section-sub">Real campaigns that drove real results. See the strategies we used to crush goals.</p>
+
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1: Instagram Growth Campaign -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">📈 Instagram Growth</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="platform">Platform: Instagram Reels</div>
+                        <h3>Instagram Growth Campaign</h3>
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat">
+                                <span class="value">784.7K</span>
+                                <span class="label">Views (28 days)</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">+18%</span>
+                                <span class="label">Growth vs prev 28d</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">21.6K</span>
+                                <span class="label">Engagement (+100%)</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">Growing</span>
+                                <span class="label">Net followers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2: Reels Reach Explosion -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">🚀 Reels Reach</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="platform">Platform: Instagram Reels</div>
+                        <h3>Reels Reach Explosion</h3>
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat">
+                                <span class="value">122.3K</span>
+                                <span class="label">Total views (30d)</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">88.2K</span>
+                                <span class="label">Accounts reached</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">+751.1%</span>
+                                <span class="label">Reach growth</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">97.8%</span>
+                                <span class="label">Non-follower views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3: Meta Engagement Ads -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">💬 Meta Engagement</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="platform">Platform: Meta Ads Network</div>
+                        <h3>Meta Engagement Ad Campaign</h3>
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat">
+                                <span class="value">339</span>
+                                <span class="label">Conversations started</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">₨ 30.34</span>
+                                <span class="label">Cost per conversation</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">₨ 10.2K</span>
+                                <span class="label">Total spend</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">Messaging</span>
+                                <span class="label">Campaign type</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4: Multi-Platform Traffic -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">🌐 Multi-Platform</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="platform">Platform: Ad Network - US, EU & Global</div>
+                        <h3>Multi-Platform Traffic Campaigns</h3>
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat">
+                                <span class="value">15+</span>
+                                <span class="label">Campaigns completed</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">4,000+</span>
+                                <span class="label">Total visits delivered</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">Global</span>
+                                <span class="label">Geographic reach</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">↗️ Growing</span>
+                                <span class="label">Performance trend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:40px;">
+                <a href="#contact" class="btn btn-primary">Start Your Winning Campaign</a>
             </div>
         </div>
     </section>
