@@ -133,13 +133,6 @@
             background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
         }
 
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
         .hero h1 {
             font-size: 3.2rem;
             font-weight: 800;
@@ -181,26 +174,6 @@
         }
         .hero-stats .label {
             font-size: 0.95rem;
-            color: #475569;
-        }
-
-        .hero-image {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 24px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
-            text-align: center;
-        }
-        .hero-image i {
-            font-size: 4rem;
-            color: #2563eb;
-            margin-bottom: 16px;
-        }
-        .hero-image h3 {
-            font-size: 1.4rem;
-            margin-bottom: 8px;
-        }
-        .hero-image p {
             color: #475569;
         }
 
@@ -271,13 +244,6 @@
         .about {
             padding: 80px 0;
             background: #f8fafc;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
         }
 
         .about h2 {
@@ -420,8 +386,6 @@
 
         /* ----- RESPONSIVE ----- */
         @media (max-width: 992px) {
-            .hero-grid,
-            .about-grid,
             .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -485,39 +449,28 @@
 
     <!-- ===== HERO ===== -->
     <section class="hero">
-        <div class="container hero-grid">
-            <div>
-                <h1>We Grow Your <span>Brand</span> Without Third‑Party Dependence</h1>
-                <p>Real results from Meta ads, Instagram, and organic traffic — no middlemen, just your unique identity.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Start Your Growth</a>
-                    <a href="https://wa.me/923394290701" target="_blank" class="btn btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div>
-                        <span class="number">200K+</span>
-                        <span class="label">Instagram Views (1 month)</span>
-                    </div>
-                    <div>
-                        <span class="number">5K</span>
-                        <span class="label">Link Clicks (10 days)</span>
-                    </div>
-                    <div>
-                        <span class="number">30</span>
-                        <span class="label">Sales (High‑ticket)</span>
-                    </div>
-                </div>
+        <div class="container">
+            <h1>We Grow Your <span>Brand</span> Without Third‑Party Dependence</h1>
+            <p>Real results from Meta ads, Instagram, and organic traffic — no middlemen, just your unique identity.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Start Your Growth</a>
+                <a href="https://wa.me/923394290701" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
-            <div class="hero-image">
-                <i class="fas fa-chart-line"></i>
-                <h3>Rana Mutahhar</h3>
-                <p>Founder, Digitally Advertising</p>
-                <p style="font-size:0.95rem; margin-top:16px; background:#f1f5f9; padding:16px; border-radius:12px;">
-                    <i class="fas fa-quote-left" style="color:#2563eb; margin-right:6px;"></i>
-                    We help businesses build their own identity — no Amazon, no platform dependency.
-                </p>
+            <div class="hero-stats">
+                <div>
+                    <span class="number">200K+</span>
+                    <span class="label">Instagram Views (1 month)</span>
+                </div>
+                <div>
+                    <span class="number">5K</span>
+                    <span class="label">Link Clicks (10 days)</span>
+                </div>
+                <div>
+                    <span class="number">30</span>
+                    <span class="label">Sales (High‑ticket)</span>
+                </div>
             </div>
         </div>
     </section>
@@ -560,36 +513,24 @@
 
     <!-- ===== ABOUT / STORY ===== -->
     <section class="about" id="about">
-        <div class="container about-grid">
-            <div>
-                <h2>My Story: <span>Why I Started</span></h2>
-                <p>
-                    I'm <strong>Rana Mutahhar</strong>, and I started Digitally Advertising because I saw firsthand how 
-                    Amazon and other third‑party platforms were eating up all the profits of honest sellers.
-                </p>
-                <div class="highlight-box">
-                    <strong>"We don't just run ads — we build your brand's unique identity so you own your audience, not a platform."</strong>
-                </div>
-                <p>
-                    I've helped websites explode their traffic, generated over 200K Instagram views in a single month, 
-                    and delivered 5K link clicks with 30 high‑ticket sales in just 10 days for Techonics Ltd. 
-                    Every strategy is tailored, transparent, and built for long‑term growth.
-                </p>
-                <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
-                    <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Meta Ads</span>
-                    <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Organic Growth</span>
-                    <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Email Marketing</span>
-                </div>
+        <div class="container">
+            <h2>My Story: <span>Why I Started</span></h2>
+            <p>
+                I'm <strong>Rana Mutahhar</strong>, and I started Digitally Advertising because I saw firsthand how 
+                Amazon and other third‑party platforms were eating up all the profits of honest sellers.
+            </p>
+            <div class="highlight-box">
+                <strong>"We don't just run ads — we build your brand's unique identity so you own your audience, not a platform."</strong>
             </div>
-            <div style="background:#ffffff; padding:32px; border-radius:24px; box-shadow:0 8px 30px rgba(0,0,0,0.04);">
-                <i class="fas fa-user-circle" style="font-size:5rem; color:#2563eb; display:block; margin-bottom:12px;"></i>
-                <h3 style="font-size:1.6rem;">Rana Mutahhar</h3>
-                <p style="color:#475569;">Founder &amp; Lead Strategist</p>
-                <p style="margin-top:16px; color:#334155;">
-                    <i class="fas fa-check-circle" style="color:#2563eb;"></i> 5+ years in digital growth<br>
-                    <i class="fas fa-check-circle" style="color:#2563eb;"></i> Helped 20+ brands scale<br>
-                    <i class="fas fa-check-circle" style="color:#2563eb;"></i> Ex‑Amazon seller — I know the pain points
-                </p>
+            <p>
+                I've helped websites explode their traffic, generated over 200K Instagram views in a single month, 
+                and delivered 5K link clicks with 30 high‑ticket sales in just 10 days for Techonics Ltd. 
+                Every strategy is tailored, transparent, and built for long‑term growth.
+            </p>
+            <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
+                <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Meta Ads</span>
+                <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Organic Growth</span>
+                <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Email Marketing</span>
             </div>
         </div>
     </section>
