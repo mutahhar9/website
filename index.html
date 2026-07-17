@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digitally Advertising | Rana Mutahhar</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* ----- RESET & BASE ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f8fafc;
+            color: #0b1a2f;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- BUTTONS ----- */
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+        }
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        .btn-outline:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp:hover {
+            background: #1ebe5c;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+        }
+
+        /* ----- HEADER / NAV ----- */
+        header {
+            background: #ffffff;
+            padding: 16px 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #0b1a2f;
+        }
+        .logo span {
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .nav-cta {
+            background: #2563eb;
+            color: #fff !important;
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-weight: 600;
+        }
+        .nav-cta:hover {
+            background: #1d4ed8 !important;
+            color: #fff !important;
+        }
+
+        /* ----- HERO ----- */
+        .hero {
+            padding: 80px 0 60px;
+            background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #334155;
+            margin-bottom: 32px;
+            max-width: 90%;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 2px solid #e2e8f0;
+        }
+        .hero-stats div {
+            text-align: center;
+        }
+        .hero-stats .number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #2563eb;
+            display: block;
+        }
+        .hero-stats .label {
+            font-size: 0.95rem;
+            color: #475569;
+        }
+
+        .hero-image {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+        .hero-image i {
+            font-size: 4rem;
+            color: #2563eb;
+            margin-bottom: 16px;
+        }
+        .hero-image h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+        .hero-image p {
+            color: #475569;
+        }
+
+        /* ----- RESULTS / PROOF SECTION ----- */
+        .results {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .section-sub {
+            text-align: center;
+            color: #475569;
+            max-width: 700px;
+            margin: 0 auto 48px;
+            font-size: 1.1rem;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .result-card {
+            background: #f8fafc;
+            padding: 32px 24px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e9edf2;
+        }
+        .result-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
+            border-color: #2563eb;
+        }
+
+        .result-card .icon {
+            font-size: 2.8rem;
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+        .result-card .stat {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0b1a2f;
+            display: block;
+        }
+        .result-card .desc {
+            color: #334155;
+            margin-top: 8px;
+        }
+        .result-card .detail {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-top: 12px;
+            border-top: 1px dashed #d1d9e6;
+            padding-top: 12px;
+        }
+
+        /* ----- ABOUT / STORY ----- */
+        .about {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .about h2 span {
+            color: #2563eb;
+        }
+
+        .about p {
+            color: #334155;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+        }
+
+        .about .highlight-box {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 16px;
+            border-left: 6px solid #2563eb;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            margin: 24px 0;
+        }
+
+        .about .highlight-box strong {
+            color: #0b1a2f;
+        }
+
+        /* ----- CONTACT / FOOTER ----- */
+        .contact {
+            padding: 80px 0 60px;
+            background: #0b1a2f;
+            color: #ffffff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .contact h2 span {
+            color: #60a5fa;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+        .contact-item i {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #60a5fa;
+            font-size: 1.2rem;
+        }
+        .contact-item a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-item a:hover {
+            color: #60a5fa;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 32px;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            transition: border 0.2s;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #60a5fa;
+        }
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .contact-form .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #1e293b;
+            margin-top: 48px;
+            padding-top: 32px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        .footer-bottom a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        .footer-bottom a:hover {
+            color: #60a5fa;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 992px) {
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .results-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero h1 {
+                font-size: 2.6rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                max-width: 100%;
+            }
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-stats {
+                flex-direction: column;
+                gap: 16px;
+                align-items: flex-start;
+            }
+            .nav-links {
+                gap: 16px;
+                margin-top: 12px;
+            }
+            .header-flex {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .logo {
+                text-align: center;
+            }
+            .contact-grid {
+                gap: 32px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Digitally<span>Advertising</span></div>
+            <nav class="nav-links">
+                <a href="#results">Results</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="nav-cta">Let's Talk</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <h1>We Grow Your <span>Brand</span> Without Third‑Party Dependence</h1>
+                <p>Real results from Meta ads, Instagram, and organic traffic — no middlemen, just your unique identity.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Start Your Growth</a>
+                    <a href="https://wa.me/923394290701" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <span class="number">200K+</span>
+                        <span class="label">Instagram Views (1 month)</span>
+                    </div>
+                    <div>
+                        <span class="number">5K</span>
+                        <span class="label">Link Clicks (10 days)</span>
+                    </div>
+                    <div>
+                        <span class="number">30</span>
+                        <span class="label">Sales (High‑ticket)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-chart-line"></i>
+                <h3>Rana Mutahhar</h3>
+                <p>Founder, Digitally Advertising</p>
+                <p style="font-size:0.95rem; margin-top:16px; background:#f1f5f9; padding:16px; border-radius:12px;">
+                    <i class="fas fa-quote-left" style="color:#2563eb; margin-right:6px;"></i>
+                    We help businesses build their own identity — no Amazon, no platform dependency.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESULTS / PROOF ===== -->
+    <section class="results" id="results">
+        <div class="container">
+            <h2 class="section-title">Real Results <span style="color:#2563eb;">We've Delivered</span></h2>
+            <p class="section-sub">Every screenshot and stat is from our actual client work. No fluff, just proof.</p>
+
+            <div class="results-grid">
+                <!-- Card 1 -->
+                <div class="result-card">
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <span class="stat">200K+</span>
+                    <div class="desc">Instagram Views</div>
+                    <div class="detail">In a single month for a lifestyle brand — organic &amp; ad-driven.</div>
+                </div>
+                <!-- Card 2 -->
+                <div class="result-card">
+                    <div class="icon"><i class="fab fa-facebook"></i></div>
+                    <span class="stat">5,000</span>
+                    <div class="desc">Link Clicks</div>
+                    <div class="detail">From Facebook Ads for Techonics Ltd in just 10 days.</div>
+                </div>
+                <!-- Card 3 -->
+                <div class="result-card">
+                    <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+                    <span class="stat">30</span>
+                    <div class="desc">High‑Ticket Sales</div>
+                    <div class="detail">For Techonics Ltd — $1,500+ average order value.</div>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:40px;">
+                <a href="#contact" class="btn btn-primary">Let's Get You These Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT / STORY ===== -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div>
+                <h2>My Story: <span>Why I Started</span></h2>
+                <p>
+                    I'm <strong>Rana Mutahhar</strong>, and I started Digitally Advertising because I saw firsthand how 
+                    Amazon and other third‑party platforms were eating up all the profits of honest sellers.
+                </p>
+                <div class="highlight-box">
+                    <strong>"We don't just run ads — we build your brand's unique identity so you own your audience, not a platform."</strong>
+                </div>
+                <p>
+                    I've helped websites explode their traffic, generated over 200K Instagram views in a single month, 
+                    and delivered 5K link clicks with 30 high‑ticket sales in just 10 days for Techonics Ltd. 
+                    Every strategy is tailored, transparent, and built for long‑term growth.
+                </p>
+                <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
+                    <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Meta Ads</span>
+                    <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Organic Growth</span>
+                    <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Email Marketing</span>
+                </div>
+            </div>
+            <div style="background:#ffffff; padding:32px; border-radius:24px; box-shadow:0 8px 30px rgba(0,0,0,0.04);">
+                <i class="fas fa-user-circle" style="font-size:5rem; color:#2563eb; display:block; margin-bottom:12px;"></i>
+                <h3 style="font-size:1.6rem;">Rana Mutahhar</h3>
+                <p style="color:#475569;">Founder &amp; Lead Strategist</p>
+                <p style="margin-top:16px; color:#334155;">
+                    <i class="fas fa-check-circle" style="color:#2563eb;"></i> 5+ years in digital growth<br>
+                    <i class="fas fa-check-circle" style="color:#2563eb;"></i> Helped 20+ brands scale<br>
+                    <i class="fas fa-check-circle" style="color:#2563eb;"></i> Ex‑Amazon seller — I know the pain points
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / FOOTER ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2>Let's <span>Grow</span> Together</h2>
+                    <p>No bots, no templates — just real strategy from someone who's been in your shoes.</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@digitallyadvertising.online">info@digitallyadvertising.online</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/923394290701" target="_blank">+92 339 4290701</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <span>Rana Mutahhar (founder, direct line)</span>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="https://wa.me/923394290701" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Me
+                        </a>
+                        <a href="mailto:info@digitallyadvertising.online" class="btn btn-outline" style="background:#fff; color:#0b1a2f; border-color:#475569;">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+
+                    <div style="margin-top:32px; background:rgba(255,255,255,0.04); padding:20px; border-radius:16px;">
+                        <p style="color:#cbd5e1; font-size:0.95rem;">
+                            <i class="fas fa-shield-alt" style="color:#60a5fa;"></i> 
+                            Your data is safe. No third‑party platforms — just direct, honest growth.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom:16px; font-weight:600;">Send a Quick Message</h3>
+                    <form action="mailto:info@digitallyadvertising.online" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Email Address" required />
+                        <input type="text" name="phone" placeholder="Phone (optional)" />
+                        <textarea name="message" placeholder="Tell me about your business &amp; goals..." required></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <p style="margin-top:12px; font-size:0.85rem; color:#94a3b8; text-align:center;">
+                        Or reach me directly on WhatsApp — I usually reply within 2 hours.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 <strong>Digitally Advertising</strong> — Built by Rana Mutahhar.
+                    <span style="display:inline-block; margin:0 12px;">|</span>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="margin-left:8px;"><i class="fab fa-facebook"></i></a>
+                    <span style="display:inline-block; margin:0 12px;">|</span>
+                    <a href="mailto:info@digitallyadvertising.online">info@digitallyadvertising.online</a>
+                </p>
+                <p style="margin-top:8px; font-size:0.85rem;">
+                    <i class="fas fa-lock" style="margin-right:6px;"></i> 
+                    No third‑party dependency — you own your brand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SMOOTH SCROLL (optional) ===== -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === "#") return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
