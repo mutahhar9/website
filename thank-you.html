@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Sent | Digitally Advertising</title>
+    <meta name="description" content="Thank you for reaching out to Digitally Advertising. Rana Mutahhar will get back to you within 2 hours." />
+    <meta name="robots" content="noindex, follow" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Message Sent | Digitally Advertising" />
+    <meta property="og:description" content="Thank you for reaching out. We'll get back to you within 2 hours." />
+    <meta property="og:url" content="https://digitallyadvertising.online/thank-you.html" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' width='100' height='100'/><text x='50' y='60' font-size='50' font-weight='800' fill='%23fff' text-anchor='middle' font-family='Arial'>da</text></svg>" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f8fafc;
+            color: #0b1a2f;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- BUTTONS ----- */
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+        }
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp:hover {
+            background: #1ebe5c;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        .btn-outline:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        /* ----- HEADER ----- */
+        header {
+            background: #ffffff;
+            padding: 16px 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #0b1a2f;
+        }
+        .logo span {
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .nav-cta {
+            background: #2563eb;
+            color: #fff !important;
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-weight: 600;
+        }
+        .nav-cta:hover {
+            background: #1d4ed8 !important;
+            color: #fff !important;
+        }
+
+        /* ----- THANK YOU HERO ----- */
+        .thankyou-hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .thankyou-box {
+            background: #ffffff;
+            padding: 60px 50px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid #e9edf2;
+        }
+
+        .thankyou-box .icon {
+            font-size: 5rem;
+            color: #22c55e;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .thankyou-box h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #0b1a2f;
+            margin-bottom: 12px;
+        }
+
+        .thankyou-box h1 span {
+            color: #2563eb;
+        }
+
+        .thankyou-box p {
+            color: #475569;
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+
+        .thankyou-box .sub-text {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+
+        .thankyou-box .divider {
+            width: 60px;
+            height: 4px;
+            background: #2563eb;
+            border-radius: 4px;
+            margin: 24px auto;
+        }
+
+        .thankyou-box .next-steps {
+            background: #f8fafc;
+            padding: 20px 24px;
+            border-radius: 16px;
+            text-align: left;
+            margin: 24px 0;
+        }
+
+        .thankyou-box .next-steps h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0b1a2f;
+            margin-bottom: 8px;
+        }
+
+        .thankyou-box .next-steps li {
+            color: #334155;
+            font-size: 0.95rem;
+            margin-left: 20px;
+            margin-bottom: 4px;
+        }
+
+        .thankyou-box .next-steps li i {
+            color: #2563eb;
+            margin-right: 8px;
+        }
+
+        .thankyou-box .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-bottom {
+            border-top: 1px solid #e9edf2;
+            margin-top: 0;
+            padding: 24px 0;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            background: #ffffff;
+        }
+        .footer-bottom a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-bottom a:hover {
+            color: #2563eb;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .thankyou-box {
+                padding: 40px 24px;
+            }
+            .thankyou-box h1 {
+                font-size: 1.8rem;
+            }
+            .nav-links {
+                gap: 16px;
+                margin-top: 12px;
+            }
+            .header-flex {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .logo {
+                text-align: center;
+            }
+            .thankyou-box .btn-group {
+                flex-direction: column;
+            }
+            .thankyou-box .btn-group .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Digitally<span>Advertising</span></div>
+            <nav class="nav-links">
+                <a href="/#results">Results</a>
+                <a href="/#portfolio">Portfolio</a>
+                <a href="/#about">About</a>
+                <a href="/#contact" class="nav-cta">Let's Talk</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== THANK YOU SECTION ===== -->
+    <section class="thankyou-hero">
+        <div class="container">
+            <div class="thankyou-box">
+                <span class="icon">✅</span>
+                <h1>Message <span>Sent!</span></h1>
+                <p>Thanks for reaching out, <strong>Rana Mutahhar</strong> will get back to you soon.</p>
+                <p class="sub-text">I usually reply within <strong>2 hours</strong> on WhatsApp or email.</p>
+
+                <div class="divider"></div>
+
+                <div class="next-steps">
+                    <h3>📌 While you wait:</h3>
+                    <ul style="list-style:none; padding:0;">
+                        <li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Check your email — I may reply sooner</li>
+                        <li><i class="fas fa-check-circle" style="color:#22c55e;"></i> For urgent inquiries, WhatsApp me directly</li>
+                        <li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Check out my portfolio above for more results</li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <a href="https://wa.me/923394290701" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Me Now
+                    </a>
+                    <a href="/" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>
+                &copy; 2026 <strong>Digitally Advertising</strong> — Built by Rana Mutahhar.
+                <span style="display:inline-block; margin:0 12px;">|</span>
+                <a href="https://www.instagram.com/digitally971" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61559689305243" target="_blank" style="margin-left:8px;"><i class="fab fa-facebook"></i></a>
+                <span style="display:inline-block; margin:0 12px;">|</span>
+                <a href="mailto:info@digitallyadvertising.online">info@digitallyadvertising.online</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
