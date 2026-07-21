@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grow independently with us | Digitally Advertising</title>
-    <meta name="description" content="Expert digital marketing & social media advertising agency. Meta ads, Instagram marketing, Facebook campaigns & organic growth. Get 200K+ views, real sales. No middlemen—direct brand growth strategy." />
+    <title>Grow Your Brand Independently | Digitally Advertising</title>
+    <meta name="description" content="Expert digital marketing agency for Meta ads, Instagram &amp; organic growth. Real results: 200K+ views, 5K clicks, 30+ high-ticket sales. No middlemen—you own your audience." />
     <meta name="keywords" content="digital marketing agency, Meta ads specialist, Instagram marketing, Facebook advertising, social media marketing, Meta ad management, Instagram growth, brand growth, Meta advertising, Facebook ads management, organic growth, digital advertising Pakistan" />
+    
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Grow Your Brand Independently | Digitally Advertising" />
+    <meta property="og:description" content="Expert digital marketing agency for Meta ads, Instagram &amp; organic growth. Real results: 200K+ views, 5K clicks, 30+ high-ticket sales. No middlemen—you own your audience." />
+    <meta property="og:url" content="https://digitallyadvertising.online/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://digitallyadvertising.online/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' width='100' height='100'/><text x='50' y='60' font-size='50' font-weight='800' fill='%23fff' text-anchor='middle' font-family='Arial'>da</text></svg>" />
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* ----- RESET & BASE ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
             background: #f8fafc;
@@ -17,8 +36,14 @@
             line-height: 1.6;
             scroll-behavior: smooth;
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- BUTTONS ----- */
         .btn {
             display: inline-block;
             padding: 14px 36px;
@@ -30,6 +55,7 @@
             border: none;
             cursor: pointer;
         }
+
         .btn-primary {
             background: #2563eb;
             color: #fff;
@@ -40,16 +66,7 @@
             transform: translateY(-3px);
             box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
         }
-        .btn-whatsapp {
-            background: #25d366;
-            color: #fff;
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
-        }
-        .btn-whatsapp:hover {
-            background: #1ebe5c;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
-        }
+
         .btn-outline {
             background: transparent;
             color: #2563eb;
@@ -60,6 +77,28 @@
             color: #fff;
         }
 
+        .btn-whatsapp {
+            background: #25d366;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp:hover {
+            background: #1ebe5c;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-white {
+            background: #ffffff;
+            color: #0b1a2f;
+            border: 2px solid #475569;
+        }
+        .btn-white:hover {
+            background: #f1f5f9;
+            transform: translateY(-3px);
+        }
+
+        /* ----- HEADER / NAV ----- */
         header {
             background: #ffffff;
             padding: 16px 0;
@@ -68,14 +107,23 @@
             top: 0;
             z-index: 100;
         }
+
         .header-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
         }
-        .logo { font-size: 1.5rem; font-weight: 800; color: #0b1a2f; }
-        .logo span { color: #2563eb; }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #0b1a2f;
+        }
+        .logo span {
+            color: #2563eb;
+        }
+
         .nav-links {
             display: flex;
             gap: 32px;
@@ -88,7 +136,10 @@
             font-weight: 500;
             transition: color 0.2s;
         }
-        .nav-links a:hover { color: #2563eb; }
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
         .nav-cta {
             background: #2563eb;
             color: #fff !important;
@@ -101,31 +152,39 @@
             color: #fff !important;
         }
 
+        /* ----- HERO ----- */
         .hero {
             padding: 80px 0 60px;
             background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
-            text-align: center;
         }
+
         .hero h1 {
             font-size: 3.2rem;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 20px;
         }
-        .hero h1 span { color: #2563eb; }
+        .hero h1 span {
+            color: #2563eb;
+        }
+
         .hero p {
             font-size: 1.2rem;
             color: #334155;
             margin-bottom: 32px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 90%;
         }
+
         .hero-buttons {
             display: flex;
             gap: 16px;
-            justify-content: center;
             flex-wrap: wrap;
+        }
+
+        /* ----- RESULTS / PROOF SECTION ----- */
+        .results {
+            padding: 80px 0;
+            background: #ffffff;
         }
 
         .section-title {
@@ -142,31 +201,41 @@
             font-size: 1.1rem;
         }
 
-        .results {
-            padding: 80px 0;
-            background: #ffffff;
-        }
         .results-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
+
         .result-card {
             background: #f8fafc;
             padding: 32px 24px;
             border-radius: 20px;
             text-align: center;
-            border: 1px solid #e9edf2;
             transition: all 0.3s ease;
+            border: 1px solid #e9edf2;
         }
         .result-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
             border-color: #2563eb;
         }
-        .result-card .icon { font-size: 2.8rem; color: #2563eb; margin-bottom: 12px; }
-        .result-card .stat { font-size: 2.2rem; font-weight: 800; color: #0b1a2f; display: block; }
-        .result-card .desc { color: #334155; margin-top: 8px; }
+
+        .result-card .icon {
+            font-size: 2.8rem;
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+        .result-card .stat {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0b1a2f;
+            display: block;
+        }
+        .result-card .desc {
+            color: #334155;
+            margin-top: 8px;
+        }
         .result-card .detail {
             font-size: 0.95rem;
             color: #64748b;
@@ -175,28 +244,19 @@
             padding-top: 12px;
         }
 
-        .dashboard-cta {
-            background: #e8f0fe;
-            border: 2px solid #2563eb;
-            border-radius: 16px;
-            padding: 32px;
-            margin: 40px auto 0;
-            max-width: 800px;
-            text-align: center;
-        }
-        .dashboard-cta h3 { font-size: 1.4rem; margin-bottom: 8px; color: #0b1a2f; }
-        .dashboard-cta p { color: #334155; margin-bottom: 16px; }
-
+        /* ----- PORTFOLIO / CASE STUDIES ----- */
         .portfolio {
             padding: 80px 0;
             background: #f8fafc;
         }
+
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
             margin-top: 48px;
         }
+
         .portfolio-item {
             background: #ffffff;
             border-radius: 20px;
@@ -208,6 +268,7 @@
             transform: translateY(-8px);
             box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
         }
+
         .portfolio-image {
             width: 100%;
             height: 200px;
@@ -216,55 +277,121 @@
             align-items: center;
             justify-content: center;
             font-size: 3rem;
+            overflow: hidden;
         }
-        .portfolio-content { padding: 28px; }
-        .portfolio-content h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; color: #0b1a2f; }
-        .portfolio-content .platform { color: #2563eb; font-weight: 600; font-size: 0.9rem; margin-bottom: 12px; }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            padding: 28px;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0b1a2f;
+        }
+
+        .portfolio-content .platform {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
         .portfolio-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
             margin-top: 16px;
         }
+
         .portfolio-stat {
             background: #f0f7ff;
             padding: 12px;
             border-radius: 12px;
             text-align: center;
         }
-        .portfolio-stat .value { font-size: 1.5rem; font-weight: 800; color: #2563eb; display: block; }
-        .portfolio-stat .label { font-size: 0.85rem; color: #334155; margin-top: 4px; }
 
+        .portfolio-stat .value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #2563eb;
+            display: block;
+        }
+
+        .portfolio-stat .label {
+            font-size: 0.85rem;
+            color: #334155;
+            margin-top: 4px;
+        }
+
+        /* ----- ABOUT / STORY ----- */
         .about {
             padding: 80px 0;
             background: #ffffff;
         }
-        .about h2 { font-size: 2.4rem; font-weight: 700; margin-bottom: 20px; }
-        .about h2 span { color: #2563eb; }
-        .about p { color: #334155; font-size: 1.1rem; margin-bottom: 16px; max-width: 800px; }
+
+        .about h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .about h2 span {
+            color: #2563eb;
+        }
+
+        .about p {
+            color: #334155;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+        }
+
         .about .highlight-box {
             background: #f8fafc;
             padding: 24px;
             border-radius: 16px;
             border-left: 6px solid #2563eb;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
             margin: 24px 0;
-            max-width: 800px;
         }
-        .about .highlight-box strong { color: #0b1a2f; }
 
+        .about .highlight-box strong {
+            color: #0b1a2f;
+        }
+
+        /* ----- CONTACT / FOOTER ----- */
         .contact {
             padding: 80px 0 60px;
             background: #0b1a2f;
             color: #ffffff;
         }
+
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
         }
-        .contact h2 { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; }
-        .contact h2 span { color: #60a5fa; }
-        .contact p { color: #cbd5e1; font-size: 1.05rem; margin-bottom: 24px; }
+
+        .contact h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .contact h2 span {
+            color: #60a5fa;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+        }
 
         .contact-item {
             display: flex;
@@ -284,8 +411,15 @@
             color: #60a5fa;
             font-size: 1.2rem;
         }
-        .contact-item a { color: #ffffff; text-decoration: none; transition: color 0.2s; }
-        .contact-item a:hover { color: #60a5fa; }
+        .contact-item a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-item a:hover {
+            color: #60a5fa;
+        }
+
         .contact-actions {
             display: flex;
             gap: 16px;
@@ -309,14 +443,25 @@
             color: #fff;
             font-size: 1rem;
             margin-bottom: 16px;
+            transition: border 0.2s;
         }
         .contact-form input:focus,
         .contact-form textarea:focus {
             outline: none;
             border-color: #60a5fa;
         }
-        .contact-form textarea { min-height: 120px; resize: vertical; }
-        .contact-form .btn { width: 100%; justify-content: center; }
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .contact-form .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .contact-form ::placeholder {
+            color: #94a3b8;
+        }
 
         .footer-bottom {
             border-top: 1px solid #1e293b;
@@ -326,29 +471,84 @@
             color: #94a3b8;
             font-size: 0.95rem;
         }
-        .footer-bottom a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
-        .footer-bottom a:hover { color: #60a5fa; }
-
-        @media (max-width: 992px) {
-            .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-            .results-grid { grid-template-columns: 1fr 1fr; }
-            .portfolio-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2.6rem; }
+        .footer-bottom a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s;
         }
+        .footer-bottom a:hover {
+            color: #60a5fa;
+        }
+
+        .address-box {
+            background: rgba(255, 255, 255, 0.04);
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin-top: 16px;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+        .address-box i {
+            color: #60a5fa;
+            margin-right: 8px;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .results-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.6rem;
+            }
+        }
+
         @media (max-width: 600px) {
-            .hero h1 { font-size: 2rem; }
-            .results-grid { grid-template-columns: 1fr; }
-            .portfolio-grid { grid-template-columns: 1fr; }
-            .nav-links { gap: 16px; margin-top: 12px; }
-            .header-flex { flex-direction: column; align-items: stretch; }
-            .logo { text-align: center; }
-            .section-title { font-size: 1.8rem; }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                max-width: 100%;
+            }
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                gap: 16px;
+                margin-top: 12px;
+            }
+            .header-flex {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .logo {
+                text-align: center;
+            }
+            .contact-grid {
+                gap: 32px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .portfolio-image {
+                height: 150px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="container header-flex">
             <div class="logo">Digitally<span>Advertising</span></div>
@@ -361,11 +561,11 @@
         </div>
     </header>
 
-    <!-- HERO -->
+    <!-- ===== HERO ===== -->
     <section class="hero">
         <div class="container">
             <h1>We Grow Your <span>Brand</span> Without Third‑Party Dependence</h1>
-            <p>Real results from Meta ads, Instagram, and organic traffic — all verified through our live analytics dashboards.</p>
+            <p>Real results from Meta ads, Instagram, and organic traffic — no middlemen, just your unique identity.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Start Your Growth</a>
                 <a href="https://wa.me/923394290701" target="_blank" class="btn btn-whatsapp">
@@ -375,109 +575,173 @@
         </div>
     </section>
 
-    <!-- RESULTS -->
+    <!-- ===== RESULTS / PROOF ===== -->
     <section class="results" id="results">
         <div class="container">
             <h2 class="section-title">Real Results <span style="color:#2563eb;">We've Delivered</span></h2>
-            <p class="section-sub">Every stat is pulled directly from our analytics dashboards. We'll show you the live data during our consultation.</p>
+            <p class="section-sub">Every screenshot and stat is from our actual client work. No fluff, just proof.</p>
 
             <div class="results-grid">
+                <!-- Card 1 -->
                 <div class="result-card">
                     <div class="icon"><i class="fab fa-instagram"></i></div>
                     <span class="stat">200K+</span>
                     <div class="desc">Instagram Views</div>
-                    <div class="detail">In a single month for a lifestyle brand — verified by Instagram Insights.</div>
+                    <div class="detail">In a single month for a lifestyle brand — organic &amp; ad-driven.</div>
                 </div>
+                <!-- Card 2 -->
                 <div class="result-card">
                     <div class="icon"><i class="fab fa-facebook"></i></div>
                     <span class="stat">5,000</span>
                     <div class="desc">Link Clicks</div>
-                    <div class="detail">From Facebook Ads for Techonics Ltd in just 10 days — verified by Meta Ads Manager.</div>
+                    <div class="detail">From Facebook Ads for Techonics Ltd in just 10 days.</div>
                 </div>
+                <!-- Card 3 -->
                 <div class="result-card">
                     <div class="icon"><i class="fas fa-shopping-cart"></i></div>
                     <span class="stat">30</span>
                     <div class="desc">High‑Ticket Sales</div>
-                    <div class="detail">For Techonics Ltd — $1,500+ average order value — verified by Shopify/Pixel data.</div>
+                    <div class="detail">For Techonics Ltd — $1,500+ average order value.</div>
                 </div>
             </div>
 
-            <!-- DASHBOARD CTA -->
-            <div class="dashboard-cta">
-                <h3>📊 See the Live Dashboards</h3>
-                <p>We don't just share screenshots — we'll <strong>share our screen</strong> and walk you through the real-time analytics for every campaign we've run.</p>
-                <a href="#contact" class="btn btn-primary">Book a Live Dashboard Tour</a>
+            <div style="text-align:center; margin-top:40px;">
+                <a href="#contact" class="btn btn-primary">Let's Get You These Results</a>
             </div>
         </div>
     </section>
 
-    <!-- PORTFOLIO -->
+    <!-- ===== PORTFOLIO / CASE STUDIES ===== -->
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="section-title">Our <span style="color:#2563eb;">Campaign Wins</span></h2>
-            <p class="section-sub">Real campaigns that drove real results. All metrics are sourced directly from platform analytics.</p>
+            <p class="section-sub">Real campaigns that drove real results. See the strategies we used to crush goals.</p>
 
             <div class="portfolio-grid">
+                <!-- Portfolio Item 1: Instagram Growth Campaign -->
                 <div class="portfolio-item">
-                    <div class="portfolio-image">📈 Instagram Growth</div>
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">📈 Instagram Growth</div>
+                    </div>
                     <div class="portfolio-content">
                         <div class="platform">Platform: Instagram Reels</div>
                         <h3>Instagram Growth Campaign</h3>
                         <div class="portfolio-stats">
-                            <div class="portfolio-stat"><span class="value">784.7K</span><span class="label">Views (28 days)</span></div>
-                            <div class="portfolio-stat"><span class="value">+18%</span><span class="label">Growth vs prev 28d</span></div>
-                            <div class="portfolio-stat"><span class="value">21.6K</span><span class="label">Engagement (+100%)</span></div>
-                            <div class="portfolio-stat"><span class="value">Growing</span><span class="label">Net followers</span></div>
+                            <div class="portfolio-stat">
+                                <span class="value">784.7K</span>
+                                <span class="label">Views (28 days)</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">+18%</span>
+                                <span class="label">Growth vs prev 28d</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">21.6K</span>
+                                <span class="label">Engagement (+100%)</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">Growing</span>
+                                <span class="label">Net followers</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Portfolio Item 2: Reels Reach Explosion -->
                 <div class="portfolio-item">
-                    <div class="portfolio-image">🚀 Reels Reach</div>
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">🚀 Reels Reach</div>
+                    </div>
                     <div class="portfolio-content">
                         <div class="platform">Platform: Instagram Reels</div>
                         <h3>Reels Reach Explosion</h3>
                         <div class="portfolio-stats">
-                            <div class="portfolio-stat"><span class="value">122.3K</span><span class="label">Total views (30d)</span></div>
-                            <div class="portfolio-stat"><span class="value">88.2K</span><span class="label">Accounts reached</span></div>
-                            <div class="portfolio-stat"><span class="value">+751.1%</span><span class="label">Reach growth</span></div>
-                            <div class="portfolio-stat"><span class="value">97.8%</span><span class="label">Non-follower views</span></div>
+                            <div class="portfolio-stat">
+                                <span class="value">122.3K</span>
+                                <span class="label">Total views (30d)</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">88.2K</span>
+                                <span class="label">Accounts reached</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">+751.1%</span>
+                                <span class="label">Reach growth</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">97.8%</span>
+                                <span class="label">Non-follower views</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Portfolio Item 3: Meta Engagement Ads -->
                 <div class="portfolio-item">
-                    <div class="portfolio-image">💬 Meta Engagement</div>
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">💬 Meta Engagement</div>
+                    </div>
                     <div class="portfolio-content">
                         <div class="platform">Platform: Meta Ads Network</div>
                         <h3>Meta Engagement Ad Campaign</h3>
                         <div class="portfolio-stats">
-                            <div class="portfolio-stat"><span class="value">339</span><span class="label">Conversations started</span></div>
-                            <div class="portfolio-stat"><span class="value">₨ 30.34</span><span class="label">Cost per conversation</span></div>
-                            <div class="portfolio-stat"><span class="value">₨ 10.2K</span><span class="label">Total spend</span></div>
-                            <div class="portfolio-stat"><span class="value">Messaging</span><span class="label">Campaign type</span></div>
+                            <div class="portfolio-stat">
+                                <span class="value">339</span>
+                                <span class="label">Conversations started</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">₨ 30.34</span>
+                                <span class="label">Cost per conversation</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">₨ 10.2K</span>
+                                <span class="label">Total spend</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">Messaging</span>
+                                <span class="label">Campaign type</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Portfolio Item 4: Multi-Platform Traffic -->
                 <div class="portfolio-item">
-                    <div class="portfolio-image">🌐 Multi-Platform</div>
+                    <div class="portfolio-image">
+                        <div style="text-align:center; color:#2563eb; font-weight:800;">🌐 Multi-Platform</div>
+                    </div>
                     <div class="portfolio-content">
                         <div class="platform">Platform: Ad Network - US, EU & Global</div>
                         <h3>Multi-Platform Traffic Campaigns</h3>
                         <div class="portfolio-stats">
-                            <div class="portfolio-stat"><span class="value">15+</span><span class="label">Campaigns completed</span></div>
-                            <div class="portfolio-stat"><span class="value">4,000+</span><span class="label">Total visits delivered</span></div>
-                            <div class="portfolio-stat"><span class="value">Global</span><span class="label">Geographic reach</span></div>
-                            <div class="portfolio-stat"><span class="value">↗️ Growing</span><span class="label">Performance trend</span></div>
+                            <div class="portfolio-stat">
+                                <span class="value">15+</span>
+                                <span class="label">Campaigns completed</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">4,000+</span>
+                                <span class="label">Total visits delivered</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">Global</span>
+                                <span class="label">Geographic reach</span>
+                            </div>
+                            <div class="portfolio-stat">
+                                <span class="value">↗️ Growing</span>
+                                <span class="label">Performance trend</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div style="text-align:center; margin-top:40px;">
+                <a href="#contact" class="btn btn-primary">Start Your Winning Campaign</a>
+            </div>
         </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ===== ABOUT / STORY ===== -->
     <section class="about" id="about">
         <div class="container">
             <h2>My Story: <span>Why I Started</span></h2>
@@ -493,10 +757,6 @@
                 and delivered 5K link clicks with 30 high‑ticket sales in just 10 days for Techonics Ltd. 
                 Every strategy is tailored, transparent, and built for long‑term growth.
             </p>
-            <p style="margin-top: 16px;">
-                <strong>🔍 Ready to verify?</strong> During our consultation, I'll share my screen and show you 
-                the <strong>live analytics dashboards</strong> for every campaign mentioned above. No screenshots — just real, unfiltered data.
-            </p>
             <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
                 <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Meta Ads</span>
                 <span style="background:#e2e8f0; padding:6px 18px; border-radius:40px; font-weight:500;">Organic Growth</span>
@@ -505,13 +765,13 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ===== CONTACT / FOOTER ===== -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-grid">
                 <div>
                     <h2>Let's <span>Grow</span> Together</h2>
-                    <p>No bots, no templates — just real strategy from someone who's been in your shoes. <strong>We'll show you the live data.</strong></p>
+                    <p>No bots, no templates — just real strategy from someone who's been in your shoes.</p>
 
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -526,11 +786,16 @@
                         <span>Rana Mutahhar (founder, direct line)</span>
                     </div>
 
+                    <div class="address-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        st#5 house#5 bostan colony qainchi amer sidhu, Lahore, Pakistan 54000
+                    </div>
+
                     <div class="contact-actions">
                         <a href="https://wa.me/923394290701" target="_blank" class="btn btn-whatsapp">
                             <i class="fab fa-whatsapp"></i> WhatsApp Me
                         </a>
-                        <a href="mailto:info@digitallyadvertising.online" class="btn btn-outline" style="background:#fff; color:#0b1a2f; border-color:#475569;">
+                        <a href="mailto:info@digitallyadvertising.online" class="btn btn-white">
                             <i class="fas fa-envelope"></i> Email
                         </a>
                     </div>
@@ -543,19 +808,37 @@
                     </div>
                 </div>
 
+                <!-- ===== SECURE CONTACT FORM (FIXED) ===== -->
                 <div class="contact-form">
                     <h3 style="margin-bottom:16px; font-weight:600;">Send a Quick Message</h3>
-                    <form action="mailto:info@digitallyadvertising.online" method="post" enctype="text/plain">
+                    
+                    <form action="https://formsubmit.co/info@digitallyadvertising.online" method="POST">
+                        <!-- Honeypot (spam protection) -->
+                        <input type="text" name="_honey" style="display:none" />
+                        
+                        <!-- Disable captcha (optional) -->
+                        <input type="hidden" name="_captcha" value="false" />
+                        
+                        <!-- Redirect after submission -->
+                        <input type="hidden" name="_next" value="https://digitallyadvertising.online/#contact" />
+                        
+                        <!-- Email subject -->
+                        <input type="hidden" name="_subject" value="New Inquiry from Digitally Advertising" />
+                        
+                        <!-- Form fields -->
                         <input type="text" name="name" placeholder="Your Name" required />
                         <input type="email" name="email" placeholder="Email Address" required />
                         <input type="text" name="phone" placeholder="Phone (optional)" />
                         <textarea name="message" placeholder="Tell me about your business &amp; goals..." required></textarea>
+                        
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
+                    
                     <p style="margin-top:12px; font-size:0.85rem; color:#94a3b8; text-align:center;">
-                        Or reach me directly on WhatsApp — I usually reply within 2 hours.
+                        <i class="fas fa-lock" style="color:#60a5fa; margin-right:4px;"></i>
+                        Your message is sent securely. Or reach me directly on WhatsApp — I usually reply within 2 hours.
                     </p>
                 </div>
             </div>
@@ -564,8 +847,8 @@
                 <p>
                     &copy; 2026 <strong>Digitally Advertising</strong> — Built by Rana Mutahhar.
                     <span style="display:inline-block; margin:0 12px;">|</span>
-                    <a href="https://www.instagram.com/digitally971" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61559689305243" target="_blank" style="margin-left:8px;"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/digitally971" target="_blank" title="Follow on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61559689305243" target="_blank" title="Follow on Facebook" style="margin-left:8px;"><i class="fab fa-facebook"></i></a>
                     <span style="display:inline-block; margin:0 12px;">|</span>
                     <a href="mailto:info@digitallyadvertising.online">info@digitallyadvertising.online</a>
                 </p>
@@ -577,6 +860,7 @@
         </div>
     </section>
 
+    <!-- ===== SMOOTH SCROLL ===== -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -590,5 +874,6 @@
             });
         });
     </script>
+
 </body>
 </html>
