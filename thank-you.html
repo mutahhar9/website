@@ -90,7 +90,7 @@
         /* ----- HEADER ----- */
         header {
             background: #ffffff;
-            padding: 16px 0;
+            padding: 8px 0;
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
         }
 
@@ -99,25 +99,20 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #0b1a2f;
+            gap: 0;
             text-decoration: none;
         }
 
         .logo img {
-            height: 40px;
+            height: 100px;
             width: auto;
-        }
-
-        .logo span {
-            color: #2563eb;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -280,6 +275,9 @@
             .logo {
                 justify-content: center;
             }
+            .logo img {
+                height: 70px;
+            }
             .thankyou-box .btn-group {
                 flex-direction: column;
             }
@@ -295,9 +293,9 @@
     <!-- ===== HEADER ===== -->
     <header>
         <div class="container header-flex">
-            <div class="logo">
+            <a href="/" class="logo">
                 <img src="Digitally Logo.jpg" alt="Digitally Advertising Logo" />
-            </div>
+            </a>
             <nav class="nav-links">
                 <a href="/#results">Results</a>
                 <a href="/#portfolio">Portfolio</a>
